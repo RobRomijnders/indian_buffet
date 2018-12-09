@@ -12,7 +12,9 @@ And *another* way to get intuition for the IBP follows from the generative stori
 # How to select from an infinite amount of features?
 
 We can think of the IBP as a distribution over sparse matrices. Those names might scare you, but we have seen it before. In the Dirichlet process mixture model, every data point belonged to one cluster. We can thus think of a sparse matrix, <img src="https://github.com/RobRomijnders/indian_buffet/blob/master/svgs/5b51bd2e6f329245d425b8002d7cf942.svg?invert_in_darkmode" align=middle width=12.351075000000002pt height=22.381919999999983pt/>, where each row corresponds to a data sample. Each row in this matrix has only one non-zero entry, which corresponds to its cluster. Then its parameters follow from:
-<p align="center"><img src="https://github.com/RobRomijnders/indian_buffet/blob/master/svgs/da37fed89884a3ecedd73ae83ec24f1e.svg?invert_in_darkmode" align=middle width=61.365809999999996pt height=11.190893999999998pt/></p>
+
+<img src="https://github.com/RobRomijnders/indian_buffet/blob/master/svgs/37122becb1075610afc4ef5928e36bb8.svg?invert_in_darkmode" align=middle width=61.365809999999996pt height=22.381919999999983pt/>
+
 Each row in <img src="https://github.com/RobRomijnders/indian_buffet/blob/master/svgs/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode" align=middle width=12.282765000000003pt height=22.381919999999983pt/> corresponds to the parameters of one cluster. The matrix <img src="https://github.com/RobRomijnders/indian_buffet/blob/master/svgs/5b51bd2e6f329245d425b8002d7cf942.svg?invert_in_darkmode" align=middle width=12.351075000000002pt height=22.381919999999983pt/> *selects* one of these rows with its non-zero entry. A matrix now may look like:
 ![matrix_dpmm](https://github.com/RobRomijnders/indian_buffet/blob/master/doc/matrix_dpmm.png?raw=true)
 
