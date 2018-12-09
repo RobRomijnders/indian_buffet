@@ -13,7 +13,7 @@ And *another* way to get intuition for the IBP follows from the generative stori
 
 We can think of the IBP as a distribution over sparse matrices. Those names might scare you, but we have seen it before. In the Dirichlet process mixture model, every data point belonged to one cluster. We can thus think of a sparse matrix, <img src="https://github.com/RobRomijnders/indian_buffet/blob/master/svgs/5b51bd2e6f329245d425b8002d7cf942.svg" align=middle width=12.351075000000002pt height=22.381919999999983pt/>, where each row corresponds to a data sample. Each row in this matrix has only one non-zero entry, which corresponds to its cluster. Then its parameters follow from:
 
-<img src="https://github.com/RobRomijnders/indian_buffet/blob/master/svgs/37122becb1075610afc4ef5928e36bb8.svg" align=middle width=61.365809999999996pt height=22.381919999999983pt/>
+<img src="https://github.com/RobRomijnders/indian_buffet/blob/master/svgs/473a469d56d2d52c52f4531af09c9bb6.svg" align=middle width=61.365809999999996pt height=22.381919999999983pt/>
 
 Each row in <img src="https://github.com/RobRomijnders/indian_buffet/blob/master/svgs/53d147e7f3fe6e47ee05b88b166bd3f6.svg" align=middle width=12.282765000000003pt height=22.381919999999983pt/> corresponds to the parameters of one cluster. The matrix <img src="https://github.com/RobRomijnders/indian_buffet/blob/master/svgs/5b51bd2e6f329245d425b8002d7cf942.svg" align=middle width=12.351075000000002pt height=22.381919999999983pt/> *selects* one of these rows with its non-zero entry. A matrix now may look like:
 ![matrix_dpmm](https://github.com/RobRomijnders/indian_buffet/blob/master/doc/matrix_dpmm.png?raw=true)
@@ -67,6 +67,10 @@ As a personal note: I find it remarkable that a real world image can be reconstr
   * [Useful lecture slides by Zoubin Gharamani](https://www.eurandom.tue.nl/events/workshops/2010/YESIV/Prog-Abstr_files/Ghahramani-lecture3.pdf)
   * [Lecture as MLSS 2015: Ryan Adams, Dirichlet Processes and friends](https://www.youtube.com/watch?v=xusN7RqKpPI)
 
-Credits
+# Credits
 
   * Images of the sparse matrices come from [here](https://www.eurandom.tue.nl/events/workshops/2010/YESIV/Prog-Abstr_files/Ghahramani-lecture3.pdf)
+  * I used code from [this repo](https://github.com/davidandrzej/PyIBP)
+
+As always, I am curious to any comments and questions. Reach me at romijndersrob@gmail.com
+
